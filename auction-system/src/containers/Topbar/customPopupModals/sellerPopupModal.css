@@ -1,0 +1,25 @@
+.topbarSellerButton{
+    size:medium;
+    color:#3949AB;
+    background-color: white;
+    font-size: 14px;
+    box-shadow: black 4px;
+}
+
+.topbarSellerButton:hover{
+    background-color: #3949AB;
+    color:white;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 1240px) {
+    .topbarSellerButton{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .topbarSellerButton{
+        font-size: 8px;
+    }
+}

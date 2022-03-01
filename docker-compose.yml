@@ -1,0 +1,46 @@
+version: '3'
+
+services:
+  django:
+    build: ./auction-backend
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+    volumes:
+      - ./auction-backend:/app/api
+    ports:
+      - "8000:8000"
+    depends_on: 
+      - db
+
+  celery:
+    build: ./auction-backend
+    command: ["celery", "-A", "config", "worker","-B"]
+    volumes:
+      - ./auction-backend:/app/api
+
+    depends_on: 
+      - db
+
+  frontend:
+    build: ./auction-system
+    stdin_open: true
+    command: ["npm", "start"]
+    volumes:
+      - ./auction-system:/app/frontend
+      - node-modules:/app/frontend/node_modules
+    ports:
+      - "3000:3000"
+
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=auction_system
+      - POSTGRES_USER=auction_user
+      - POSTGRES_PASSWORD=auction_password
+
+  redis:
+    image: "redis:alpine"
+    ports: 
+      - 6379:6379
+
+volumes:
+  node-modules:

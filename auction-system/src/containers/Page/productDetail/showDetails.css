@@ -1,0 +1,96 @@
+.productDetail_container .prodDetail_feat_img_wrap {
+    margin-bottom: 4px;
+}
+.productDetail_container .prodDetail_feat_img_txt {
+    padding: 35% 15px;
+}
+.productDetail_container .prodDetail_img_list {
+  /* width: 100%; */
+  -ms-flex-positive: 1!important;
+    flex-grow: 1!important;
+}
+.productDetail_container .prodDetail_img_li {
+    width: 50% !important;
+    padding-top: 35% !important; 
+    margin-top: 1px !important;
+    height: auto !important;
+    border: 2px solid #fff;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+.productDetail_container .productDetail_content_right {
+    padding: 0;
+    box-shadow: none;
+}
+.productDetail_container .productDetail_title {
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.productDetail_container .productDetail_desc_txt {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.productDetail_container .prodDetail_counter, .productDetail_container .Countdown {
+    font-size: 15px;
+}
+.productDetail_container .prodDetail_add_cart_btn {
+    border-radius: 0;
+    box-shadow: none;
+    height: 42px;
+    margin-left: 10px;
+}
+.productDetail_container .prodDetail_inc_btn {
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid #3f51b5;
+    background: #3f51b5;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+.productDetail_container .prodDetail_inc_input {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-left: 1px solid #3f51b5;
+    border-right: 1px solid #3f51b5;
+}
+.productDetail_container .prodDetail_inc_input>div {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-left: none;
+    box-shadow: none;
+    border-right: none;
+}
+.productDetail_container .prodDetail_inc_input>div:before, .productDetail_container .prodDetail_inc_input>div:after {
+    display: none !important;
+}
+.productDetail_container .prodDetail_inc_input input {
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.productDetail_container .prodDetail_inc_input input::-webkit-outer-spin-button,
+.productDetail_container .prodDetail_inc_input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.productDetail_container .prodDetail_inc_input input[type=number] {
+  -moz-appearance: textfield;
+}
+.productDetail_container .prodDetail_stock_count, .productDetail_container .prodDetail_stock_title {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.disabled{
+    pointer-events: none;
+}

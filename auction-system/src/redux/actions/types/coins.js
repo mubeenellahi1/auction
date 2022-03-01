@@ -1,0 +1,2 @@
+export const ADD_COINS= "ADD_COINS";
+export const SUBTRACT_COINS= "SUBTRACT_COINS";

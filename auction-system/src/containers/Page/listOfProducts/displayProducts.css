@@ -1,0 +1,149 @@
+.product_wrap_col .product_label_wrap {
+    position: absolute;
+    left: 2px;
+    top: 0px;
+}
+.product_wrap_col .productTitle {
+    cursor: pointer;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    /* position: relative; */
+    overflow: hidden;
+}
+.product_wrap_col .productTitle span {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.product_wrap_col .productTitle .titleViewBtn {
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    color: darkblue;
+    font-weight: bold;
+    margin: 0;
+}
+.product_wrap_col .productTitle span {
+    opacity: 1;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    font-weight: bold;
+}
+.product_wrap_col:hover .productTitle span {
+    opacity: 0;
+}
+.product_wrap_col:hover .titleViewBtn {
+    opacity: 1;
+}
+.product_wrap_col .product_wrap_inner {
+    box-shadow: none;
+}
+.product_wrap_col .product_inner_img {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+.product_wrap_col:hover .product_wrap_inner {
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.075);
+    -moz-box-shadow: 0 6px 12px rgba(0,0,0,.075);
+    -ms-box-shadow: 0 6px 12px rgba(0,0,0,.075);
+    -o-box-shadow: 0 6px 12px rgba(0,0,0,.075);
+    box-shadow: 0 6px 12px rgba(0,0,0,.075);
+}
+.product_wrap_col .productCounterWrap {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    font-size: 13px;
+    /* width: calc(100% - 32px); */
+    padding: 3px 3px;
+    /* background: rgba(255, 255, 255, 0.5); */
+}
+.product_wrap_col .counterTxt {
+    display: block;
+    -webkit-text-shadow: 2px 2px 9px rgba(255,255,255,0.81);
+    text-shadow: 2px 2px 9px rgba(255,255,255,0.81);
+    border-radius: 3px;
+    background: rgba(255, 255, 255, .5);
+    padding: 0 3px;
+}
+.product_wrap_col .product_title_wrap {
+    position: relative;
+}
+.product_wrap_col .f14 {
+    font-size: 14px !important;
+}
+.product_wrap_col .Countdown .Countdown-col {
+    display: block;
+    font-size: 13px;
+    text-align: right;
+}
+.product_wrap_col .Countdown .Countdown-col>span {
+    -webkit-text-shadow: 2px 2px 9px rgba(255,255,255,0.81);
+    text-shadow: 2px 2px 9px rgba(255,255,255,0.81);
+    border-radius: 3px;
+    background: rgba(255, 255, 255, .5);
+    padding: 0 3px;
+}
+.product_wrap_col .Countdown .Countdown-col:nth-child(2) {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.3s;
+}
+.product_wrap_col .Countdown .Countdown-col:nth-child(3) {
+    transition-delay: 2s;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.2s;
+}
+.product_wrap_col .Countdown .Countdown-col:nth-child(4) {
+    transition-delay: 3s;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.1s;
+}
+.product_wrap_col:hover  .Countdown .Countdown-col:nth-child(2) {
+    transform: translateY(-0%);
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.1s;
+}
+.product_wrap_col:hover  .Countdown .Countdown-col:nth-child(3) {
+    transform: translateY(-0%);
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.2s;
+}
+.product_wrap_col:hover  .Countdown .Countdown-col:nth-child(4) {
+    transform: translateY(-0%);
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.3s;
+}
